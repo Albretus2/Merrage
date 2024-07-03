@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply font-manrope;
+}
+
+@layer components {
+  .card {
+    @apply grayscale-[60%] flex flex-col items-end justify-between  bg-center bg-cover h-[30rem] lg:h-[45rem] rounded-xl lg:grow w-full lg:w-0 relative p-4;
+  }
+
+  .card-model-1 {
+    background-image: url("./assets/model-1.jpg");
+  }
+  .card-model-2 {
+    background-image: url("./assets/model-2.jpg");
+  }
+  .card-model-3 {
+    background-image: url("./assets/model-3.jpg");
+  }
+
+  .card .quantity {
+    @apply bg-accent px-4 py-2 rounded-full border-2 border-white font-semibold text-white inline-flex gap-3 justify-between bg-opacity-70 backdrop-blur-sm;
+  }
+
+  .card .name-catalog {
+    @apply w-full mx-auto rounded-full  bg-accent ps-5  border-2 border-white text-lg font-semibold tracking-wide text-white inline-flex items-center justify-between bg-opacity-70 backdrop-blur-sm;
+  }
+
+  .title {
+    @apply text-[2rem]  md:text-[2rem] xl:text-[3rem] font-semibold;
+  }
+
+  .bg-opinionsImg {
+    background-image: url("./assets/opinions.jpg");
+  }
+}
